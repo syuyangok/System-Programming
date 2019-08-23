@@ -1,0 +1,3 @@
+//This program is to test signal receive
+//The program will keep running untile receive two signals:
+// Ctrl+c or time > 5sec, then program will quit.
