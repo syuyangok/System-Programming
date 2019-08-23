@@ -1,0 +1,3 @@
+This program is to test mutil threads.
+Two functions has two thread. 
+It will alternatly print "Yes" "No"
