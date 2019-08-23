@@ -13,7 +13,7 @@
 int score=0;
 
 void endGame(int sig){
-	printf("\nFinal score: %i /n", score);
+	printf("\nFinal score: %i \n", score);
 	exit(0);
 }
 
@@ -22,8 +22,8 @@ void endGame(int sig){
 int catch_signal(int sig, void(*handler)(int)){
 	struct sigaction action;
 	action.sa_handler = handler;//set default handler to custom handler.
-	sigemptyset(*action.sa_mask);
-	action.sa_flag=0;
+	sigemptyset(&action.sa_mask);
+	action.sa_flags=0;
 	return sigaction(sig, &action, NULL);
 }
 
